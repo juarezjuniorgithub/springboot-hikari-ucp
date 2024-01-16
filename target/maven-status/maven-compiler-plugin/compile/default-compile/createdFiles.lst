@@ -1,6 +1,0 @@
-com\oracle\dev\jdbc\ucp\spring\EmployeeNotFoundException.class
-com\oracle\dev\jdbc\ucp\spring\EmployeeRepository.class
-com\oracle\dev\jdbc\ucp\spring\EmployeeController.class
-com\oracle\dev\jdbc\ucp\spring\Employee.class
-com\oracle\dev\jdbc\ucp\spring\EmployeeNotFoundAdvice.class
-com\oracle\dev\jdbc\ucp\spring\EmployeeApplication.class

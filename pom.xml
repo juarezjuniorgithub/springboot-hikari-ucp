@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  
-  	<parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.0.0</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
-  <groupId>com.oracle.dev.jdbc</groupId>
-  <artifactId>springboot-hikari-ucp</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <name>springboot-hikari-ucp</name>
-  <description>A Guide to Migrating from HikariCP to Oracle UCP (Universal Connection Pool)</description>
-  <url>https://medium.com/@juarezjunior</url>
+	<groupId>com.oracle.dev.jdbc</groupId>
+	<artifactId>springboot-hikari-ucp</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>springboot-hikari-ucp</name>
+	<description>A Guide to Migrating from HikariCP to Oracle UCP (Universal
+		Connection Pool)</description>
+	<url>https://juarezjunior.medium.com/e2f3fb6db2d5</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-  </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
 
-  <dependencies>
-<dependency>
+	<dependencies>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
@@ -42,24 +44,23 @@
 		</dependency>
 
 		<dependency>
-          <groupId>com.oracle.database.jdbc</groupId>
-          <artifactId>ojdbc11</artifactId>
-          <version>23.3.0.23.09</version>
-        </dependency>
-        <dependency>
-          <groupId>com.oracle.database.jdbc</groupId>
-          <artifactId>ucp11</artifactId>
-          <version>23.3.0.23.09</version>
-        </dependency>
-	
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc11</artifactId>
+			<version>23.3.0.23.09</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ucp11</artifactId>
+			<version>23.3.0.23.09</version>
+		</dependency>
+
 		<!-- Metrics -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-  </dependencies>
+	</dependencies>
 
- 
 	<build>
 		<plugins>
 			<plugin>
@@ -80,19 +81,19 @@
 					</execution>
 				</executions>
 			</plugin>
-	
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			
+
 			<plugin>
-			  <artifactId>maven-compiler-plugin</artifactId>			  
-			  <configuration>
-			    <compilerArgs>
-				  
-				</compilerArgs>
-			</configuration>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<compilerArgs>
+
+					</compilerArgs>
+				</configuration>
 			</plugin>
 
 		</plugins>
